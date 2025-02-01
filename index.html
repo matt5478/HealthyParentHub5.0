@@ -6,74 +6,66 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="homepage is-preload">
+	<body class="left-sidebar is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<section id="header">
 					<div class="container">
-
-						<!-- Logo -->
-							<h1 id="logo"><a href="index.html">Healthy Parents' Hub</a></h1>
-							<p>Your go-to resource for parenting, health, and wellness.</p>
+						<h1 id="logo"><a href="index.html">Healthy Parents' Hub</a></h1>
+						<p>Your go-to resource for parenting, wellness, and support.</p>
 
 						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li><a class="icon solid fa-home" href="index.html"><span>Home</span></a></li>
-									<li><a class="icon solid fa-utensils" href="Meals.html"><span>Meals</span></a></li>
-									<li><a class="icon solid fa-dumbbell" href="Exercises.html"><span>Exercises</span></a></li>
-									<li><a class="icon solid fa-users" href="aboutus.html"><span>About Us</span></a></li>
-									<li><a class="icon solid fa-envelope" href="contact.html"><span>Contact</span></a></li>
-								</ul>
-							</nav>
-
+						<nav id="nav">
+							<ul>
+								<li><a class="icon solid fa-home" href="index.html"><span>Home</span></a></li>
+								<li><a class="icon solid fa-heart" href="meals.html"><span>Meals</span></a></li>
+								<li><a class="icon solid fa-child" href="excercises.html"><span>Excercises</span></a></li>
+								<li><a class="icon solid fa-users" href="community.html"><span>Community</span></a></li>
+							</ul>
+						</nav>
 					</div>
 				</section>
 
-			<!-- Features -->
-				<section id="features">
+			<!-- Main -->
+				<section id="main">
 					<div class="container">
-						<header>
-							<h2>Welcome to <strong>Healthy Parents' Hub</strong>!</h2>
-						</header>
-						<div class="row aln-center">
-							<div class="col-4 col-6-medium col-12-small">
+						<div class="row">
 
-								<!-- Feature -->
-									<section>
-										<a href="Meals.html" class="image featured"><img src="images/parenting.jpg" alt="" /></a>
-										<header>
-											<h3>Meals</h3>
-										</header>
-										<p>Explore healthy meal ideas, including breakfast, lunch, and dinner recipes for your family.</p>
-									</section>
-
+							<!-- Sidebar -->
+							<div id="sidebar" class="col-4 col-12-medium">
+								<section>
+									<ul class="divided">
+										<li>
+											<article class="box excerpt">
+												<header>
+													<span class="date">February 1</span>
+													<h3><a href="#">Healthy Meal Planning for Families</a></h3>
+												</header>
+												<p>Discover simple and nutritious meal ideas to keep your family healthy and happy.</p>
+											</article>
+										</li>
+									</ul>
+								</section>
 							</div>
-							<div class="col-4 col-6-medium col-12-small">
 
-								<!-- Feature -->
-									<section>
-										<a href="Exercises.html" class="image featured"><img src="images/health.jpg" alt="" /></a>
-										<header>
-											<h3>Exercises</h3>
-										</header>
-										<p>Find family-friendly workout routines, from cardio to strength training, for every fitness level.</p>
-									</section>
-
+							<!-- Content -->
+							<div id="content" class="col-8 col-12-medium imp-medium">
+								<article class="box post">
+									<header>
+										<h2>Welcome to Healthy Parents' Hub</h2>
+									</header>
+									<span class="image featured"><img src="images/family.jpg" alt="Happy Family" /></span>
+									<p>We provide expert advice, tips, and a supportive community to help parents navigate their journey with confidence.</p>
+									<h3>What We Offer:</h3>
+									<ul>
+										<li>Nutrition and wellness guidance</li>
+										<li>Parenting strategies and tips</li>
+										<li>Community support and discussions</li>
+									</ul>
+								</article>
 							</div>
-							<div class="col-4 col-6-medium col-12-small">
 
-								<!-- Feature -->
-									<section>
-										<a href="aboutus.html" class="image featured"><img src="images/community.jpg" alt="" /></a>
-										<header>
-											<h3>About Us</h3>
-										</header>
-										<p>Learn more about Healthy Parents' Hub, our mission, and how we help parents live healthier lives.</p>
-									</section>
-
-							</div>
 						</div>
 					</div>
 				</section>
@@ -82,44 +74,21 @@
 				<section id="footer">
 					<div class="container">
 						<header>
-							<h2>Questions or suggestions? <strong>Get in touch:</strong></h2>
+							<h2>Contact Us</h2>
 						</header>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-								<section>
-									<form method="post" action="#">
-										<div class="row gtr-50">
-											<div class="col-6 col-12-small">
-												<input name="name" placeholder="Name" type="text" />
-											</div>
-											<div class="col-6 col-12-small">
-												<input name="email" placeholder="Email" type="text" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message"></textarea>
-											</div>
-											<div class="col-12">
-												<a href="#" class="form-button-submit button icon solid fa-envelope">Send Message</a>
-											</div>
-										</div>
-									</form>
-								</section>
-							</div>
-						</div>
-					</div>
-					<div id="copyright" class="container">
-						<ul class="links">
-							<li>&copy; Healthy Parents' Hub. All rights reserved.</li>
-							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
+						<form method="post" action="#">
+							<input name="name" placeholder="Your Name" type="text" />
+							<input name="email" placeholder="Your Email" type="email" />
+							<textarea name="message" placeholder="Your Message"></textarea>
+							<button type="submit" class="button icon solid fa-envelope">Send Message</button>
+						</form>
 					</div>
 				</section>
 
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
