@@ -237,4 +237,41 @@
                         </div>
                         <div class="workout-option">
                             <h3>2. Squats</h3>
-                            <p>Perform 1 minute of squats to to
+                            <p>Perform 1 minute of squats to tone your legs and glutes.</p>
+                        </div>
+                        <div class="workout-option">
+                            <h3>3. Plank</h3>
+                            <p>Hold a plank for 1 minute to engage your core.</p>
+                        </div>
+                        <a href="#" class="back-btn" onclick="loadPage('workouts')">Back to Quick Workouts</a>
+                        <a href="#" class="back-btn" onclick="loadPage('home')">Back to Home</a>
+                    </div>
+                `;
+                break;
+            case 'about':
+                content = `
+                    <div class="container about-us">
+                        <h2>About Us</h2>
+                        <p>We are a community of parents who believe in staying healthy, strong, and connected. Our mission is to provide quick, accessible workouts and nutritious meals that busy parents can easily incorporate into their daily lives.</p>
+                        <p>Our approach is simple: health doesn't have to be complicated, and it certainly shouldn't be time-consuming. Join us on our journey to healthier, happier families.</p>
+                        <a href="#" class="back-btn" onclick="loadPage('home')">Back to Home</a>
+                    </div>
+                `;
+                break;
+            default:
+                content = `
+                    <div class="container">
+                        <h2>Page Not Found</h2>
+                        <a href="#" class="back-btn" onclick="loadPage('home')">Go Back Home</a>
+                    </div>
+                `;
+        }
+        document.getElementById('app').innerHTML = content;
+    }
+
+    // Load the home page by default
+    loadPage('home');
+</script>
+
+</body>
+</html>
